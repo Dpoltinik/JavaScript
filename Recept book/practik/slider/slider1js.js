@@ -1,10 +1,10 @@
 let slider = {
-    slides: ['eagl.png', 'elethant.png', 'libyd.png'],
+    slides: ['eagl.jpg', 'elethant.jpg', 'libyd.jpg'],
     frame: 0,
-    set: function(image) {
+    set: function (image) {
         document.getElementById('scr').style.backgroundImage = "url(" + image + ")";
     },
-    init: function() {
+    init: function () {
         this.set(this.slides[this.frame]);
     },
     left: function () {
@@ -17,9 +17,9 @@ let slider = {
         if (this.frame == this.slides.length) this.frame = 0;
         this.set(this.slides[this.frame]);
     }
-};
+}
 window.onload = function () {
-    slider.init ();
+    slider.init();
     setInterval (function () {
         slider.right();
     }, 5000);
