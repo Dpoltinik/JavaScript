@@ -169,20 +169,16 @@ function test(str1, str2) {
 13. В этом задании в нашу функцию testDateTime передаются две строки вида "03 November 2017 04:17".
   Вам нужно превратить строки в даты, сравнить их. Для той, что больше получить день недели и вернуть его из функции. 
 
-function test(str1, str2) {
-  let mStr1 = Date.parse(str1);
-  let mStr2 = Date.parse(str2);
-  let currentDate;
-  let weekDays = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота']
-  
-  if (mStr1 > mStr2) {
-    currentDate = new Date(mStr1);
-  } else {
-    currentDate = new Date(mStr1);
-  }
-  
-  return weekDays[currentDate.getDay()];  
+function test(a,b) {
+  let x = Date.parse(a);
+  let y = Date.parse(b);
+  let weekDay = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
+  let date = x > y ? new Date(x) : new Date(y);
+  return weekDay[date.getDay()];
 }
+
+
+
 
 14. В этом задании в нашу функцию передается угол в градусах.
   Вам нужно вернуть из функции значение его синуса.
