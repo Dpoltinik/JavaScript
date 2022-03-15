@@ -1,0 +1,32 @@
+#tt {
+    position: absolute;
+    display: block;
+    padding: 10px;
+    border: solid #089dcb;
+    border-width: 1px;
+    border-radius: 10px 10px 10px 0;
+    -webkit-border-radius: 10px 10px 10px 0;
+    -moz-border-radius: 10px 10px 10px 0;
+    -webkit-box-shadow: 1px 1px 2px #888888;
+    -moz-box-shadow: 1px 1px 2px #888888;
+    box-shadow: 1px 1px 2px #888888;
+    background-color: #ffD;
+}
+
+.h1p1 {
+    color: #000;
+    border: #9fbddd 1px solid;
+    background-color: #E7F5FE;
+    cursor: help;
+    margin-left: 5px;
+    line-height: 14px;
+    width: 12px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    font-weight: 100;
+    text-indent: 0;
+
+}
